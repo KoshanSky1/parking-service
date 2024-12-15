@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование пользователя</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50; /* Зеленый цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 0; /* Уменьшение верхнего и нижнего отступа */
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Темнее при наведении */
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        select {
+            height: 2.5em;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .alert {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <a href="/admin-panel">
+        <button>Назад</button>
+    </a>
+    <div th:replace="~{fragments/logout.html}"></div>
+</div>
+
+<div class="form-container">
+    <form th:action="@{/admin-panel/edit/{id}(id=${user.id})}" method="post" th:object="${user}">
+        <h1>Обновление пользователя</h1>
+        <div>
+            <input name="fullName" th:field="*{fullName}" th:value="${fullName}" placeholder="Введите полное имя" type="text">
+            <input name="username" th:field="*{login}" th:value="${login}" placeholder="Введите логин" type="text">
+            <input name="password" th:value="${password}" placeholder="Укажите новый пароль" type="text">
+            <select aria-label="Роль пользователя" th:field="*{role}">
+                <option selected disabled th:value="${user.role}" th:text="${'Текущая роль - '+ user.role.value}">Текущая роль</option>
+                <option th:each="role : ${T(parking_service.model.embedded.Role).values()}" th:text="${role.getValue()}" th:value="${role}"></option>
+            </select>
+            <button type="submit" name="find-offers">Обновить пользователя</button>
+        </div>
+    </form>
+</div>
+
+<div class="alert">
+    <h1>Удаление пользователя</h1>
+    <form th:method="post" th:action="@{/admin-panel/delete/{id}(id=${user.getId()})}">
+        <button type="submit">Удалить пользователя из базы данных</button>
+    </form>
+</div>
+
+</body>
+</html>

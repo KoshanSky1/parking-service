@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db4c8746-b561-4c5f-aecd-b3e1f23eec17" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2qAa7VBfixijcRA79vilscTr627" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ParkingServiceApplication.executor": "Debug",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Maven.parking-service [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ParkingServiceApplication.executor": "Debug",
+    "git-widget-placeholder": "impl__event__service",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/str4t/dev/event-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.4488424",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\str4t\Desktop\Test\src\main\resources" />
+      <recent name="D:\Test\src\main\resources\templates" />
+      <recent name="D:\Test\src\main\resources\templates\fragments" />
+      <recent name="C:\Users\str4t\dev\parking-lots\src\main\java\parking_service\config" />
+      <recent name="C:\Users\str4t\dev\parking-lots\src\main\java\parking_service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\str4t\Desktop\ParkingService\src\main\java\parking_service\utils" />
+      <recent name="D:\Test\src\main\resources\static" />
+      <recent name="D:\Test\src\main\resources\templates" />
+      <recent name="C:\Users\str4t\dev\parking-lots\src\main\java\parking_service\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="parking_service" />
+      <recent name="parking_service.service" />
+      <recent name="parking_service.dto" />
+      <recent name="parking_service.repository" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="LoginAlreadyExistsException" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ParkingServiceApplication">
+    <configuration name="ParkingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parking_service.ParkingServiceApplication" />
+      <module name="parking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parking_service.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="parking-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="parking_service.ParkingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ParkingServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db4c8746-b561-4c5f-aecd-b3e1f23eec17" name="Changes" comment="" />
+      <created>1734107669175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734107669175</updated>
+      <workItem from="1734267553790" duration="32000" />
+      <workItem from="1734267593289" duration="45000" />
+      <workItem from="1734267651552" duration="151000" />
+      <workItem from="1734267812927" duration="16882000" />
+      <workItem from="1734288397063" duration="2839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="parking_service.model.User" memberName="parkingLots" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список парковок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1; /* Равное распределение пространства */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        #parking-list {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50; /* Зеленый цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px 0; /* Уменьшение верхнего и нижнего отступа */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Темнее при наведении */
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #createParkingForm {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div>
+    <a href="/admin-panel" sec:authorize="hasAuthority('ADMIN')">
+        <button>В панель админа</button>
+    </a>
+    <div th:replace="~{fragments/logout.html}"></div>
+</div>
+
+<div id="container">
+    <div class="column">
+        <h4>Список парковок</h4>
+        <form th:action="@{/parking-lots/delete}" method="post" id="deleteParkingForm">
+            <select id="parking-list" name="lotId" size="10">
+                <option th:each="lot : ${allParkingLots}"
+                        th:value="${lot.id}"
+                        th:text="${lot.author.getFullName() + ' ' + lot.getCity() + ' ' + lot.getAddress()}">
+                </option>
+            </select>
+        </form>
+    </div>
+    <div class="column" style="text-align: right;">
+        <h4>Сотрудник</h4>
+        <button id="showFormButton">Добавить парковку</button>
+        <div id="createParkingForm">
+            <h2>Добавить парковку</h2>
+            <form th:method="post" th:action="@{/parking-lots}">
+                <input type="text" name="city" placeholder="Город" required>
+                <input type="text" name="address" placeholder="Адрес парковки" required>
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+        <button type="submit" form="deleteParkingForm">Удалить парковку</button>
+    </div>
+</div>
+
+<script>
+    const toggleFormButton = document.getElementById('showFormButton');
+    const createParkingForm = document.getElementById('createParkingForm');
+
+    toggleFormButton.addEventListener('click', function () {
+        if (createParkingForm.style.display === 'none' || createParkingForm.style.display === '') {
+            createParkingForm.style.display = 'block';
+        } else {
+            createParkingForm.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
