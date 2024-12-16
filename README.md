@@ -32,5 +32,6 @@
     ![2024-12-16_03-29-55](https://github.com/user-attachments/assets/100d8a15-340a-4fd0-a037-ffe82cac8c15)
     ![2024-12-16_03-31-00](https://github.com/user-attachments/assets/0d58f62a-663e-486f-8f5b-8198782ed882)
 15. Попытка добавить пользователя с существуюшим логином
-    ![2024-12-16_03-17-13](https://github.com/user-attachments/assets/43aadc4f-b1c7-49ed-92fb-6dbce8f172db)
+    ![2024-12-16_03-38-58](https://github.com/user-attachments/assets/5b47f5c5-96c2-4ed6-afeb-b72e9dedde81)
+
 
