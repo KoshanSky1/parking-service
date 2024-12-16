@@ -43,7 +43,7 @@ public class UserService {
     @Transactional
     public UserDtoOut createUser(NewUserDto dto) {
         if (userRepository.existsByLogin(dto.login())) {
-            throw new LoginAlreadyExistsException("This login already exists!");
+            throw new LoginAlreadyExistsException("This login " + dto.login() + " already exists!");
         }
 
         User user = new User();
