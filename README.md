@@ -42,12 +42,13 @@ Java, PostgreSQL, Spring Boot, Spring Security, Hibernate, REST API, Thymeleaf, 
 12. Тест на выход и повторный вход пользователя с id=2. Данные в Listbox успешно подгружаются из БД:
    ![2024-12-16_03-25-52](https://github.com/user-attachments/assets/c1a99406-28ba-474d-977f-8b06f8bdb5c5)
    ![395922573-d4c81ad9-caa3-4cb9-bdfe-56ede4ac85e5](https://github.com/user-attachments/assets/79f07c23-829d-40f3-b760-4f58dfb24077)
-13. Тест на добавление другого пользователя и добавление парковок из его аккаунта. В Listbox отражаются только парковки, внесенные пользователем с id =3.
+13. Тест на добавление другого пользователя и добавление парковок из его аккаунта. В Listbox отражаются только парковки, внесенные пользователем с id=3.
    ![2024-12-16_03-29-01](https://github.com/user-attachments/assets/b5df0c0c-def0-478f-98f9-785e07885cfc)
    ![2024-12-16_03-29-26](https://github.com/user-attachments/assets/442326ed-66d3-4b12-ab27-b34061374f66)
    ![2024-12-16_03-29-55](https://github.com/user-attachments/assets/100d8a15-340a-4fd0-a037-ffe82cac8c15)
+   Вход пользователя с id=2:
    ![2024-12-16_03-31-00](https://github.com/user-attachments/assets/0d58f62a-663e-486f-8f5b-8198782ed882)
-14. Попытка добавить пользователя с существуюшим логином приводит к LoginAlreadyExistsException:
+15. Попытка добавить пользователя с существуюшим логином приводит к LoginAlreadyExistsException:
    ![2024-12-16_03-38-58](https://github.com/user-attachments/assets/5b47f5c5-96c2-4ed6-afeb-b72e9dedde81)
 
 
